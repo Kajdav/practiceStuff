@@ -1,10 +1,12 @@
-var array = [1, 2, 3, 4, 5];
+var strang = 'Hello, my friends!';
 
 function reverse(arr) {
     var reverseArr = [];
+    arr = arr.split('');
     for (var i = arr.length - 1; i >= 0; i--) {
         reverseArr.push(arr[i]);
     }
+    reverseArr = reverseArr.join('');
     return reverseArr;
 }
-alert(reverse(array));
+alert(reverse(strang));
